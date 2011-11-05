@@ -1,0 +1,7 @@
+<%= simple_form_for resource do |form| %>
+    <% editable_attributes.each do |attr| %>
+        <%= form.input attr %>
+    <% end %>
+
+    <%= form.submit  %>
+<% end %>
